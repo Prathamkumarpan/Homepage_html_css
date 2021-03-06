@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fa_icon/all.min.css">
+    <title>!Success</title>
+</head>
+
+<body>
+    <!-- Nav Section -->
+    <nav>
+        <img src="img/logo-2.png" id="logo_img">
+    </nav>
+
+    <!-- Section 1-->
+    <section class="section section_first">
+        <div class="Left_img ">
+            <img src="img/believe.jpg">
+        </div>
+        <div class="Right_content">
+            <p>
+                "There are two types of people who will tell you that you cannot make a difference in this world: those
+                who are afraid to try and those who are afraid you will succeed."
+            </p>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Section 2 About Us-->
+
+    <section class="About_Us_section">
+        <h1>About Us</h1>
+        <p>Would you like me to give you a formula for success? It's quite simple, really: Double your rate of failure.
+            You are thinking of failure as the enemy of success. But it isn't at all. You can be discouraged by failure
+            or you can learn from it, so go ahead and make mistakes. Make all you can. Because remember that's where you
+            will find success.<br><br>
+            SUCCESS is the only magazine that focuses on people who take full responsibility for their own development
+            and income. SUCCESS readers understand that the world has changed and the classic employer-to-employee
+            relationship has changed from a patriarchal to a transactional one. No longer can you expect a corporate
+            training program and a predictable growth track. Our readers understand and embrace that they are
+            responsible for their own long-term success and happiness, and need to be proactive in finding the
+            inspiration, motivation and training to achieve their goals. Some may choose to start their own business but
+            will prefer to keep it small—what some would call a micro business—so they will always have total control
+            and visibility over its growth, spirit and contributions to society. SUCCESS readers desire the freedom and
+            control to make all meaningful business decisions.
+        </p>
+    </section>
+    <hr>
+
+    <!-- Section 3 -->
+
+    <section class="section section_three">
+        <div class="left_content_section">
+            <p>
+                faliure Success is the state or condition of meeting a defined range of expectations. It may be viewed
+                as the opposite of failure. The criteria for success depend on context, and may be relative to a
+                particular observer or belief system.
+            </p>
+        </div>
+        <div class="right_img_section">
+            <img src="img/rate.jpg">
+        </div>
+    </section>
+    <hr>
+
+    <!-- carousel -->
+
+    <section class="carousel_main_section">
+        <h1>Experience Tells Every Thing</h1>
+        <div class="inner_carousel_main_section">
+            <button class="left_btn"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+            <img src="img/carousel_first.png" class="carousel_img">
+            <button class="right_btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Contact Us section -->
+
+    <section class="contact_Us_section">
+        <div class="inner_contact_Us_section">
+            <h1>Contact Us</h1>
+            <fieldset>
+                <form>
+                    <input type="email" name="email" placeholder="Enter Email Address" autocomplete="off">
+                    <input type="name" name="Fullname" placeholder="Full Name" autocomplete="off">
+                    <textarea cols="30" rows="10" placeholder="Comment" autocomplete="off"></textarea>
+                    <button type="submit" class="btn">Contact Us</button>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+
+    <!-- Javascript -->
+    <script src="fa_icon/all.min.js"></script>
+    <script>
+        const arr_img = [`img/carousel_second.jpg`, `img/carousel_third.jpg`, `img/carousel_first.png`]
+        let img = document.querySelector('.carousel_img');
+        let right_btn = document.querySelector('.right_btn');
+        let left_btn = document.querySelector('.left_btn');
+        let count = 0;
+
+        left_btn.addEventListener('click', () => {
+            count--;
+            if (count < 0) {
+                count = arr_img.length - 1;
+            }
+            img.src = arr_img[count];
+        })
+
+        right_btn.addEventListener('click', () => {
+            img.src = arr_img[count];
+            count++;
+            if (count > arr_img.length - 1) {
+                count = 0;
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>

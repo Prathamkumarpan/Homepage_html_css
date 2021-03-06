@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+body {
+  background: #4c1699;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar Section */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 13vh;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+#logo_img {
+  height: 10rem;
+  width: 19rem;
+  filter: drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.5));
+}
+
+/* Section 1*/
+.section {
+  display: flex;
+}
+
+.section_first {
+  width: 98vw;
+  height: 70vh;
+}
+
+.Left_img {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Left_img img {
+  height: 70%;
+  width: 70%;
+}
+
+.Right_content {
+  height: 100%;
+  width: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section 2 About US */
+
+.About_Us_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 65vh;
+  margin-top: 10px;
+}
+
+.About_Us_section h1 {
+  font-size: 3rem;
+  color: #f968f0;
+  filter: drop-shadow(0px 3px 1px #000);
+}
+
+.About_Us_section p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  width: 92vw;
+  height: 25vh;
+}
+
+/* Section 3*/
+
+.section_three {
+  height: 60vh;
+  width: 100vw;
+}
+
+.left_content_section {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.left_content_section p {
+  margin-left: 15px;
+}
+
+.right_img_section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right_img_section img {
+  width: 70%;
+  height: 70%;
+}
+
+/* carousel */
+.carousel_main_section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.carousel_main_section h1 {
+  font-size: 3rem;
+  color: #f968f0;
+  filter: drop-shadow(0px 3px 1px #000);
+  margin-bottom: 15px;
+}
+.inner_carousel_main_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right_btn,
+.left_btn {
+  height: 30px;
+  width: 30px;
+  transform: translate(0, -50%);
+  font-size: 20px;
+  background: transparent;
+  border: none;
+}
+
+.right_btn:hover,
+.left_btn:hover {
+  cursor: pointer;
+}
+
+.carousel_img {
+  height: 500px;
+  width: 700px;
+  margin-bottom: 15px;
+}
+
+/* Contact Us */
+
+.contact_Us_section {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 80px 0;
+}
+.inner_contact_Us_section {
+  width: 50%;
+  margin-top: 30px;
+}
+.inner_contact_Us_section h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #f968f0;
+  filter: drop-shadow(0px 3px 1px #000);
+}
+.contact_Us_section fieldset {
+  text-align: center;
+  font-size: 35px;
+}
+.contact_Us_section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact_Us_section form input,
+.contact_Us_section form textarea,
+.contact_Us_section form button {
+  padding: 5px;
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+}
+.btn {
+  border: none;
+  background: transparent;
+  border: 2px solid #f968f0;
+  color: #f968f0;
+  border-radius: 10px;
+}
+.btn:hover {
+  background: #f968f0;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 2px 2px black;
+}
+
+/* responsive */
+
+@media screen and (max-width: 900px) {
+  .carousel_main_section h1 {
+    font-size: 2rem;
+  }
+  .inner_contact_Us_section h1 {
+    font-size: 1.4rem;
+  }
+  .right_img_section img {
+    height: 25vh;
+    width: 60vw;
+  }
+  .Right_content {
+    font-size: 1.5rem;
+    width: 80vw;
+  }
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left_content_section p {
+    margin-top: 10px;
+    width: 80vw;
+    height: 17vh;
+  }
+  .About_Us_section h1 {
+    font-size: 1.5rem;
+  }
+  .About_Us_section p {
+    height: 60vh;
+    width: 87vw;
+    font-size: 1rem;
+  }
+  .left_content_section {
+    width: 550px;
+  }
+  .carousel_main_section {
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+  }
+  .carousel_img {
+    height: 47vh;
+    width: 54vw;
+  }
+  .Left_img img {
+    height: 35vh;
+    width: 45vw;
+    margin-top: 1.8rem;
+  }
+  .inner_contact_Us_section fieldset {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .right_img_section img {
+    height: 29vh;
+    width: 75vw;
+    margin-top: 0.5rem;
+  }
+  .Left_img img {
+    height: 30vh;
+    width: 75vw;
+    margin-top: 3.5rem;
+  }
+  .left_content_section p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    width: 85vw;
+  }
+  .About_Us_section p {
+    height: 50vh;
+    width: 92vw;
+    font-size: 0.8rem;
+  }
+  .left_content_section {
+    width: 550px;
+  }
+  .carousel_main_section {
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+  }
+  .carousel_img {
+    height: 45vh;
+    width: 78vw;
+  }
+  .carousel_main_section h1 {
+    font-size: 1rem;
+  }
+  .inner_contact_Us_section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .About_Us_section p {
+    height: 50vh;
+    width: 85vw;
+    font-size: 0.9rem;
+    overflow: scroll;
+  }
+  .contact_Us_section form input,
+  .contact_Us_section form textarea,
+  .contact_Us_section form button {
+    font-size: 12px;
+  }
+  .right_btn,
+  .left_btn {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 1830px;
+  }
+  .right_btn {
+    margin-left: 100px;
+  }
+  .left_btn {
+    margin-right: 100px;
+  }
+  .carousel_main_section {
+    height: 40vh;
+  }
+  .carousel_img {
+    height: 25vh;
+    width: 78vw;
+  }
+  .right_img_section img {
+    height: 22vh;
+  }
+  .Right_content {
+    font-size: 1.2rem;
+    width: 80vw;
+  }
+  .right_img_section img {
+    margin-top: -1.5rem;
+  }
+}
